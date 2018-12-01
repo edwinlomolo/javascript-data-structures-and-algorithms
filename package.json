@@ -1,0 +1,17 @@
+{
+  "name": "javascript_ds_algorithms",
+  "version": "1.0.0",
+  "description": "Learn JavaScript data structures and algorithms for dummies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "JavaScript",
+    "Data",
+    "Structures",
+    "algorithms"
+  ],
+  "author": "Edwin Lomolo",
+  "license": "MIT"
+}
