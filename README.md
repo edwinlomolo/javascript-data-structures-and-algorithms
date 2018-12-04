@@ -2,9 +2,9 @@
 
 JavaScript is a very powerful language. It is the most popular language in the world and is the most prominent language on the Internet :sunglasses:
 
-For example, [GitHub](https://github.com)(the world's largest code host), hosts over a million JavaScript repositories(the largest number of projects is in JavaScript; refer [here]()). The number of projects in JavaScript in GitHub grows every year.
+For example, [GitHub](https://github.com)(the world's largest code host), hosts over a million JavaScript repositories(the largest number of projects is in JavaScript; refer [here](https://octoverse.github.com/projects)). The number of projects in JavaScript in GitHub grows every year.
 
-JavaScript is not a language that can be used on the front-end only. It can also be used in the back-end, and Node.js is the technology responsible for this. The number of [**Node Package Module(NPM)**]() also grows exponentially.
+JavaScript is not a language that can be used on the front-end only. It can also be used in the back-end, and Node.js is the technology responsible for this. The number of [**Node Package Module(NPM)**](https://www.npmjs.com) also grows exponentially.
 
 JavaScript is a must-have on your resume if you are or will become a web developer.
 
