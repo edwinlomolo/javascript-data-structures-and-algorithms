@@ -127,7 +127,7 @@ JavaScript `array` class has a method known as `shift()`, which removes an eleme
 ```javascript
 numbers.shift();
 ```
-### Adding an removing elements from a specific position
+### Adding and removing elements from a specific position
 
 What if we want to add or remove an element from any particular position of our array?
 
