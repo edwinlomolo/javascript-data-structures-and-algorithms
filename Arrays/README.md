@@ -4,7 +4,7 @@ An array is the simplest memory data structure. All programming language have a 
 
 An array stores values sequentially that are all of the same datatype. JavaScript allows us to create arrays with values from different datatypes.
 
-### Creating and initializing an array
+## Creating and initializing an array
 
 Declaring, creating, and initializing an array in JavaScript is simple.
 
@@ -25,6 +25,7 @@ Or we can also initialize the array with some elements,
 ```javascript
 var daysOfTheWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 ```
+
 If we want to know how many elements are in the array(its size), we can use the `length` property.
 
 ```javascript
@@ -40,6 +41,7 @@ for (var i = 0; i < daysOfTheWeek.length; i++) {
   console.log(daysOfTheWeek[i]);
 }
 ```
+
 Computers start indexing at position 0. To access an element at the first position of the array, we could do something like this:
 
 ```javascript
@@ -55,11 +57,13 @@ console.log(daysOfTheWeek[1]);
 ...and so on.
 
 ### Adding elements to an array
- Adding and removing an element from an array can be tricky.
+
+Adding and removing an element from an array can be tricky.
 
 ```javascript
 var numbers = [0,1,2,3,4,5,6,7,8,9];
 ```
+
 If we want to add a new element to this array, all we have to do is reference the last free position of the array and assign a value to it.
 
 Let's add 10 to the `numbers` array:
@@ -76,13 +80,14 @@ However, there is also a method called `push()` that allows us to add new elemen
 numbers.push(11);
 numbers.push(12, 13, 14); // add as many as you want
 ```
+
 #### Inserting an element in the first position
 
 To insert an element in the first position, we need to free the first position by shifting all the elements to the right. We loop all the elements of the array, starting from the last position `+ 1` (length) and shifting the previous element to the new position to finally assign the new value to the first position `- 1`.
 
 ```javascript
 for(var i = numbers.length; i >= 0; i--) {
-	numbers[i] = numbers[i-1];
+  numbers[i] = numbers[i-1];
 }
 numbers[0] = -1;
 ```
@@ -105,16 +110,16 @@ We have checked out adding element to the end of an array and at the beginning o
 ```javascript
 numbers.pop();
 ```
+
 The output of our array will contain numbers from `-4 to 12`.
 
 #### Removing an element from first position
 
 To remove and element from the beginning of an array, we can use the following javascript code:
 
-
 ```javascript
 for(var i = 0; i < numbers.length; i++) {
-	numbers[i] = numbers[i+1];
+  numbers[i] = numbers[i+1];
 }
 ```
 
@@ -174,17 +179,17 @@ var avgTemp[0] = [75,45,76,55,50];
 var avgTemp[1] = [45,67,33,45,30]
 ```
 
-#### Iterating the elements of two-dimensional arrays
+### Iterating the elements of two-dimensional arrays
 
 If we want to take a look at the output of our matrix array, we can use the following function to log the output:
 
 ```javascript
 function printMatrix(matrixArray) {
-	for(var i = 0; i < matrixArray.length; i++) {
-		for(var j = 0; j < matrixArray[i].length; j++) {
-			console.log(matrixArray[i][j]);
-		}
-	}
+  for(var i = 0; i < matrixArray.length; i++) {
+    for(var j = 0; j < matrixArray[i].length; j++) {
+      console.log(matrixArray[i][j]);
+    }
+  }
 }
 ```
 
@@ -204,13 +209,13 @@ For example, let's create a `3x3` matrix.
 ```javascript
 var matrixArray = [];
 for(var i = 0; i < 3; i++) {
-	matrixArray[i] = [];
-	for(var j = 0; j < 3; j++) {
-		matrixArray[i][j] = [];
-		for(var k = 0; k < 3; k++) {
-			matrixArray[i][j][k] = i+j+k;
-		}
-	}
+  matrixArray[i] = [];
+  for(var j = 0; j < 3; j++) {
+    matrixArray[i][j] = [];
+      for(var k = 0; k < 3; k++) {
+        matrixArray[i][j][k] = i+j+k;
+    }
+  }
 }
 ```
 
@@ -218,13 +223,13 @@ To print the content of our matrix array, let's create a function called `print3
 
 ```javascript
 function print3x3(matrix) {
-	for(var i = 0; i < matrix.length; i++) {
-		for(var j = 0; j < matrix[i].length; j++) {
-			for(var k = 0; k < matrix[i][j].length; k++) {
-				console.log(matrix[i][j][k]);
-			}
-		}
-	}
+  for(var i = 0; i < matrix.length; i++) {
+    for(var j = 0; j < matrix[i].length; j++) {
+      for(var k = 0; k < matrix[i][j].length; k++) {
+        console.log(matrix[i][j][k]);
+      }
+    }
+  }
 }
 ```
 
