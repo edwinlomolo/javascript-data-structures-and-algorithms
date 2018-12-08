@@ -21,19 +21,19 @@ describe("Creating and initializing an array", () => {
 });
 
 describe("Accessing elements and iterating an array", () => {
-  let expected = [10,20];
+  const expected = [10, 20];
   it("Should be able to access an item in an array", () => {
-    const numbers = [10,20];
+    const numbers = [10, 20];
     expect(numbers[0] === 10); // Access first item
-    expect(numbers[1] === 20);; // Access second item
-    for(let i = 0; i < numbers.length; i+=1) {
+    expect(numbers[1] === 20); // Access second item
+    for (let i = 0; i < numbers.length; i += 1) {
       expect(numbers[i]).to.be.equal(expected[i]);
     }
   });
 });
 
 describe("Adding elements to an array", () => {
-  let numbers = [10, 20];
+  const numbers = [10, 20];
   it("Should be able to add 30 in the last position", () => {
     numbers.push(30); // Add 30 to numbers array
     expect(numbers.length).to.be.equal(3); // Numbers array should have 3 elements
@@ -47,7 +47,7 @@ describe("Adding elements to an array", () => {
 });
 
 describe("Removing elements from an array", () => {
-  let numbers = [0,10,20,30];
+  const numbers = [0, 10, 20, 30];
   it("Should be able to remove element in the first position", () => {
     numbers.shift();
     expect(numbers.length).to.be.equal(3); // Numbers to have 3 items
@@ -61,15 +61,15 @@ describe("Removing elements from an array", () => {
 });
 
 describe("Adding and removing elements from a specific position", () => {
-  let numbers = [0,1,2,3,4,5,6,7,8,9];
+  const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
   it("Should be able to remove element(s) from a specific position", () => {
-    numbers.splice(1,2); // Remove 2 elements starting from position 1
+    numbers.splice(1, 2); // Remove 2 elements starting from position 1
     expect(numbers.length).to.be.equal(8);
     expect(numbers[1]).not.to.equal(1); // Should not be accessible
     expect(numbers[2]).not.to.equal(2); // Should not be accessible
   });
   it("Should be able to add element(s) at a specific position", () => {
-    numbers.splice(1,0,1,2);
+    numbers.splice(1, 0, 1, 2);
     expect(numbers.length).to.be.equal(10); // Should have 10 elements
     expect(numbers[1]).to.be.equal(1); // Should have 1 as second element in array
     expect(numbers[2]).to.be.equal(2); // Should have 2 as third element in array
