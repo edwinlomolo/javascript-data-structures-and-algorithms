@@ -37,7 +37,7 @@ describe("Interacting with stack data structure", () => {
     expect(stack.size()).to.be.equal(2);
   });
   it("Should be able to view elements in the stack", () => {
-    console.log(stack.print());
+    expect(stack.print()).to.be.equal([0,1].toString());
   });
   it("Should be able to clear/reset the stack", () => {
     stack.clear();
