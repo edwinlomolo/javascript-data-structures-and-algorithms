@@ -24,5 +24,22 @@ describe("Interacting with Queue data structure", () => {
   });
   it("Should be able to remove the first element from the queue(dequeue)", () => {
     queue.dequeue();
-  })
+    expect(queue.size()).to.be.equal(2);
+    expect(queue.front()).not.to.be.equal("Mary");
+  });
+  it("Should be able to view the first element in the queue", () => {
+    const numberOne = queue.front();
+    expect(numberOne).to.be.equal("John");
+  });
+  it("Should be able to check if the queue is empty", () => {
+    expect(queue.isEmpty()).to.be(false);
+  });
+  it("Should be able to check the number of elements the queue contains", () => {
+    expect(queue.size()).to.be.equal(2);
+  });
+  it("Should be able to clear/reset the queue", () => {
+    queue.clear();
+    expect(queue.isEmpty()).to.be(true);
+    expect(queue.size()).to.be.equal(0);
+  });
 });
