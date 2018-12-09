@@ -6,9 +6,9 @@ const expect = require("expect.js");
 let queue;
 
 // Hook
-before() {
+before(() => {
   queue = new Queue();
-}
+})
 
 describe("Interacting with Queue data structure", () => {
   it("Should be able to create/initialize a new queue", () => {
