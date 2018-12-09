@@ -5,9 +5,13 @@ const expect = require("expect.js");
 
 let queue;
 
+// Hook
+before() {
+  queue = new Queue();
+}
+
 describe("Interacting with Queue data structure", () => {
   it("Should be able to create/initialize a new queue", () => {
-    queue = new Queue();
     expect(queue.isEmpty()).to.be(true);
     expect(queue.size()).to.be.equal(0);
   });
@@ -18,4 +22,7 @@ describe("Interacting with Queue data structure", () => {
     expect(queue.isEmpty()).to.be(false);
     expect(queue.size()).to.be.equal(3);
   });
+  it("Should be able to remove the first element from the queue(dequeue)", () => {
+    queue.dequeue();
+  })
 });
