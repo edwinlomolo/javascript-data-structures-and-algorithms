@@ -29,6 +29,11 @@ class Queue {
     // This returns the number of elements in the queue
     return this.items.length;
   }
+
+  clear() {
+    // This clear/resets the queue
+    this.items = [];
+  }
 }
 
 module.exports = Queue;
