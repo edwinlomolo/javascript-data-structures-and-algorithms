@@ -30,3 +30,5 @@ class Queue {
     return this.items.length;
   }
 }
+
+module.exports = Queue;
