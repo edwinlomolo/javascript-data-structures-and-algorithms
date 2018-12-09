@@ -1,7 +1,7 @@
 // This represents out stack data structure implementation
 
 
-export default class Stack {
+class Stack {
   constructor() {
     this.items = [];
   }
@@ -19,3 +19,5 @@ export default class Stack {
     return this.items[this.items.length-1];
   }
 }
+
+module.exports = Stack;
