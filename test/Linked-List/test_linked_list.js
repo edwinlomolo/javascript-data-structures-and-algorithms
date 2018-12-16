@@ -23,4 +23,12 @@ describe("Interacting with Linked list data structure", () => {
     expect(linkedList.isEmpty()).to.not.be(true);
     expect(linkedList.isEmpty()).to.be(false);
   });
+  it("Should be able to remove an element at any position", () => {
+    linkedList.removeAt(0);
+    expect(linkedList.size()).to.be.equal(2);
+  });
+  it("Should be able to remove any element that does not exist in the linked list", () => {
+    const result = linkedList.removeAt(100);
+    expect(result).to.be(null);
+  });
 })
