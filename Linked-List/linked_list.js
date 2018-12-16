@@ -47,6 +47,7 @@ class LinkedList {
 
   isEmpty() {
     // This returns true if the linked list does not contain any elements and false otherwise
+    return this.length === 0;
   }
 
   size() {
