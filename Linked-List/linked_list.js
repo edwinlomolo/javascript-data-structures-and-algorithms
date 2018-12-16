@@ -55,7 +55,7 @@ class LinkedList {
       }
       this.length -= 1;
 
-      return current.element;
+      return current.element; // Return removed element
     }
     return null;
   }
