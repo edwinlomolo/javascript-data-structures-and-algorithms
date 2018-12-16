@@ -31,6 +31,29 @@ class LinkedList {
 
   insert(position, element) {
     // This inserts a new item at a specified position in the list
+    if (position >= 0 && position <= this.length) {
+      const node = new Node(element);
+      let current = this.head;
+      let previous;
+      let index = 0;
+
+      if (position === 0) { // Add on the first position
+        node.next = current;
+        this.head = node;
+      } else {
+        while (index < position) {
+          previous = current;
+          current = current.next;
+          index += 1;
+        }
+        node.next = current;
+        previous.next = node;
+      }
+
+      this.length += 1;
+      return true;
+    }
+    return false;
   }
 
   removeAt(position) {
@@ -62,10 +85,23 @@ class LinkedList {
 
   remove(element) {
     // This removes an item from the list
+    const position = this.indexOf(element);
+    return this.removeAt(position);
   }
 
   indexOf(element) {
     // This returns the index of an item in the list. If item not found, it returns -1
+    let current = this.head;
+    let index = -1;
+
+    while (current) {
+      if (element === current.element) {
+        return index;
+      }
+      index += 1;
+      current = current.next;
+    }
+    return -1;
   }
 
   isEmpty() {
@@ -80,6 +116,14 @@ class LinkedList {
 
   toString() {
     // Outputs only the element values
+    let current = this.head;
+    let string = "";
+
+    while (current) {
+      string += current.element + (current.next ? "n" : "");
+      current = current.next;
+    }
+    return string;
   }
 
   getHead() {
