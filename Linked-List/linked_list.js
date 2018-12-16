@@ -35,6 +35,29 @@ class LinkedList {
 
   removeAt(position) {
     // This removes an item from a specified position in the list
+    if (position > -1 && position < this.length) { // Check for out-of-bounds values
+      let current = this.head;
+      let previous;
+      let index = 0;
+
+      // Removing first item
+      if (position === 0) {
+        this.head = current.next;
+      } else {
+        while (index < position) {
+          previous = current;
+          current = current.next;
+          index += 1;
+        }
+
+        // Link previous with current's next: skip to remove
+        previous.next = current.next;
+      }
+      this.length -= 1;
+
+      return current.element;
+    }
+    return null;
   }
 
   remove(element) {
