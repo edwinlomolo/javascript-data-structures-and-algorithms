@@ -31,4 +31,24 @@ describe("Interacting with Linked list data structure", () => {
     const result = linkedList.removeAt(100);
     expect(result).to.be(null);
   });
+  it("Should be able to remove any element from the linked list", () => {
+    linkedList.remove("Mike");
+    expect(linkedList.size()).to.be.equal(1);
+    expect(linkedList.indexOf("Mike")).to.be.equal(-1);
+  });
+  it("Should be able to insert an element at any position", () => {
+    linkedList.insert(2, "Mike");
+    linkedList.insert(0, "Mary");
+    expect(linkedList.size()).to.be.equal(3);
+  });
+  it("Should be able to check if the list is empty", () => {
+    expect(linkedList.isEmpty()).to.be(false);
+  });
+  it("Should be able to get the number of items the list contains", () => {
+    expect(linkedList.size()).to.be.equal(3);
+  });
+  it("Should be able to get the head of the linked list", () => {
+    const head = linkedList.getHead();
+    expect(head.element).to.be.equal("Mary");
+  });
 })
