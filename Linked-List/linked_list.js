@@ -42,26 +42,18 @@ class LinkedList {
   }
 
   insert(position, element) {
-    // This inserts a new item at a specified position in the list
-    if (position >= 0 && position <= this.length) {
+    if (position >= 0 && position <= this.count) {
       const node = new Node(element);
-      let current = this.head;
-      let previous;
-      let index = 0;
-
-      if (position === 0) { // Add on the first position
+      if (position === 0) {
+        const current = this.head;
         node.next = current;
         this.head = node;
       } else {
-        while (index < position) {
-          previous = current;
-          current = current.next;
-          index += 1;
-        }
-        node.next = current;
+        const previous = this.getElementAt(position - 1);
+        node.next = previous.next;
+        
         previous.next = node;
       }
-
       this.length += 1;
       return true;
     }
