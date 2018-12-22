@@ -37,7 +37,7 @@ describe("Interacting with Linked list data structure", () => {
     expect(linkedList.indexOf("Mike")).to.be.equal(-1);
   });
   it("Should be able to insert an element at any position", () => {
-    linkedList.insert(2, "Mike");
+    linkedList.insert(1, "Mike");
     expect(linkedList.size()).to.be.equal(2);
   });
   it("Should be able to check if the list is empty", () => {
