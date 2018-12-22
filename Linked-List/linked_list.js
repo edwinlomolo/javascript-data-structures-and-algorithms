@@ -42,7 +42,7 @@ class LinkedList {
   }
 
   insert(position, element) {
-    if (position >= 0 && position <= this.count) {
+    if (position >= 0 && position <= this.length) {
       const node = new Node(element);
       if (position === 0) {
         const current = this.head;
@@ -51,7 +51,6 @@ class LinkedList {
       } else {
         const previous = this.getElement(position - 1);
         node.next = previous.next;
-        
         previous.next = node;
       }
       this.length += 1;
