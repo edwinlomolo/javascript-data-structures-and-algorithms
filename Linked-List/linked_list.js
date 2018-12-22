@@ -29,27 +29,31 @@ class LinkedList {
     this.length += 1;
   }
 
-  insert(position, element) {
-    // This inserts a new item at a specified position in the list
-    if (position >= 0 && position <= this.length) {
-      const node = new Node(element);
-      let current = this.head;
-      let previous;
-      let index = 0;
+  getElement(index) {
+    // Returns the specified element if found in the linked list or undefined otherwise
+    if (index >= 0 && index <= this.length) {
+      let node = this.head;
+      for (let i = 0; i < index && node !== null; i += 1) { // Loop the node
+        node = node.next;
+      }
+      return node;
+    }
+    return undefined;
+  }
 
-      if (position === 0) { // Add on the first position
+  insert(position, element) {
+    if (position >= 0 && position <= this.count) {
+      const node = new Node(element);
+      if (position === 0) {
+        const current = this.head;
         node.next = current;
         this.head = node;
       } else {
-        while (index < position) {
-          previous = current;
-          current = current.next;
-          index += 1;
-        }
-        node.next = current;
+        const previous = this.getElementAt(position - 1);
+        node.next = previous.next;
+        
         previous.next = node;
       }
-
       this.length += 1;
       return true;
     }
