@@ -49,7 +49,7 @@ class LinkedList {
         node.next = current;
         this.head = node;
       } else {
-        const previous = this.getElementAt(position - 1);
+        const previous = this.getElement(position - 1);
         node.next = previous.next;
         
         previous.next = node;
