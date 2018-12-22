@@ -29,6 +29,18 @@ class LinkedList {
     this.length += 1;
   }
 
+  getElement(index) {
+    // Returns the specified element if found in the linked list or undefined otherwise
+    if (index >= 0 && index <= this.length) {
+      let node = this.head;
+      for (let i = 0; i < index && node !== null; i += 1) { // Loop the node
+        node = node.next;
+      }
+      return node;
+    }
+    return undefined;
+  }
+
   insert(position, element) {
     // This inserts a new item at a specified position in the list
     if (position >= 0 && position <= this.length) {
