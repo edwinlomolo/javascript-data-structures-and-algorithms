@@ -2,9 +2,14 @@
 
 const expect = require("expect.js");
 
-describe("Creating and initializing an array", () => {
+// Hook
+beforeEach(() => {
+  let numbers;
+});
+
+describe("Interacting with an array data structure", () => {
   it("Should be able to initialize an array using new constructor", () => {
-    const numbers = new Array();
+    numbers = new Array();
     expect(numbers.length).to.be.equal(0);
     expect(Array.isArray(numbers)).to.be(true);
   });
@@ -18,23 +23,17 @@ describe("Creating and initializing an array", () => {
     expect(Array.isArray(numbers)).to.be(true);
     expect(numbers.length).to.be.equal(0);
   });
-});
-
-describe("Accessing elements and iterating an array", () => {
-  const expected = [10, 20];
   it("Should be able to access an item in an array", () => {
-    const numbers = [10, 20];
-    expect(numbers[0] === 10); // Access first item
-    expect(numbers[1] === 20); // Access second item
-    for (let i = 0; i < numbers.length; i += 1) {
-      expect(numbers[i]).to.be.equal(expected[i]);
+    const expected = [10, 20];
+    const current = [10, 20];
+    expect(current[0] === 10); // Access first item
+    expect(current[1] === 20); // Access second item
+    for (let i = 0; i < current.length; i += 1) {
+      expect(current[i]).to.be.equal(expected[i]);
     }
   });
-});
-
-describe("Adding elements to an array", () => {
-  const numbers = [10, 20];
   it("Should be able to add 30 in the last position", () => {
+    numbers = [10, 20];
     numbers.push(30); // Add 30 to numbers array
     expect(numbers.length).to.be.equal(3); // Numbers array should have 3 elements
     expect(numbers[2]).to.be.equal(30); // Third element should be 30
@@ -44,11 +43,8 @@ describe("Adding elements to an array", () => {
     expect(numbers.length).to.be.equal(4); // Numbers array to have 4 items
     expect(numbers[0]).to.be.equal(0); // First item to be 0
   });
-});
-
-describe("Removing elements from an array", () => {
-  const numbers = [0, 10, 20, 30];
   it("Should be able to remove element in the first position", () => {
+    numbers = [0, 10, 20, 30];
     numbers.shift();
     expect(numbers.length).to.be.equal(3); // Numbers to have 3 items
     expect(numbers[0]).not.to.equal(0); // Cannot access previous first element
@@ -58,11 +54,8 @@ describe("Removing elements from an array", () => {
     expect(numbers.length).to.be.equal(2);
     expect(numbers[3]).not.to.equal(30);
   });
-});
-
-describe("Adding and removing elements from a specific position", () => {
-  const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
   it("Should be able to remove element(s) from a specific position", () => {
+    numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
     numbers.splice(1, 2); // Remove 2 elements starting from position 1
     expect(numbers.length).to.be.equal(8);
     expect(numbers[1]).not.to.equal(1); // Should not be accessible
