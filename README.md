@@ -17,6 +17,7 @@ Data structures and algorithms are the subject of interviews during your job sea
 During our learning and coding time, we will also implement test cases for our data structures and algorithms just to make sure they work as we suppose and also it will a minimal introduction to testing in JavaScript.
 
 We are going to cover the following:
+
 * Arrays
 * Stacks
 * Queues
