@@ -1,0 +1,49 @@
+// Set class definition
+
+class Set {
+  constructor() {
+    this.items = {};
+  }
+
+  add(value) {
+    // This adds a new item to the set
+    if (!this.has(value)) {
+      this.items[value] = value;
+      return true;
+    }
+    return false;
+  }
+
+  delete(value) {
+    // This removes the value from the set
+    if (this.has(value)) {
+      delete this.items[value];
+      return true;
+    }
+    return false;
+  }
+
+  has(value) {
+    // This returns true if the value exists in the set or false otherwise
+    return this.items.hasOwnProperty(value);
+  }
+
+  clear() {
+    // This removes all the items from the set
+    this.items = {};
+  }
+ 
+  size() {
+    // This returns how many elements the set contains
+    return Object.keys(this.items).length;
+  }
+
+  values() {
+    // This returns all the values of the set as an array
+    const values = [];
+    for (let i = 0, keys = Object.keys(this.items); i < keys.length; i += 1) {
+      values.push(this.items[keys[i]]);
+    }
+    return values;
+  }
+}
