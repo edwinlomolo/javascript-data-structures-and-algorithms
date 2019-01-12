@@ -4,7 +4,8 @@
   "description": "Learn JavaScript data structures and algorithms for dummies",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --recursive test"
+    "test": "mocha --recursive test",
+    "lint": "eslint Linked-List Queues Sets Stacks"
   },
   "keywords": [
     "JavaScript",
