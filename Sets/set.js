@@ -47,3 +47,5 @@ class Set {
     return values;
   }
 }
+
+module.exports = Set;
