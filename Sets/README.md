@@ -9,3 +9,13 @@ A **set** is a collection of items that are unordered and consists of unique ele
 A set with no element is called  a **null set** or an **empty set**. You can also imagine a set as an array with no repeated elements and no concept or order.
 
 In mathematics, a set has some basic operations such as union, intersection, and difference.
+
+We can perform the following operations on sets:
+
+* **Union**: Given two sets, this returns a new set with elements from both the given sets.
+
+* **Intersection**: Given two sets, this returns a new set with elements that exists in both elements.
+
+* **Difference**: Given two sets, this returns a new set with all the elements that exists in the first set and do not exist in the second set.
+
+* **Subset**: This confirms whether a given set is a subset of another set.
