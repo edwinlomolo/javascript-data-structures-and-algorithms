@@ -43,4 +43,20 @@ describe("Interacting with set data structure", () => {
     set.clear();
     expect(set.size()).to.be.equal(0);
   });
+  it("Should be able to perform set union operation", () => {
+    set.add(1);
+    set.add(2);
+    set.add(3);
+    const setB = new Set();
+    setB.add(3);
+    setB.add(4);
+    setB.add(5);
+    setB.add(6);
+    const union = set.union(setB);
+    const setValues = union.values();
+    const expected = [1,2,3,4,5,6];
+    for (let i = 0; i < setValues.length; i += 1) {
+      expect(setValues[i]).to.be.equal(expected[i]);
+    }
+  });
 });
