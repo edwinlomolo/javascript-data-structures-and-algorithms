@@ -46,6 +46,21 @@ class Set {
     }
     return values;
   }
+
+  union(set) {
+    // This concats two sets
+    const unionSet = new Set();
+
+    let values = this.values();
+    for (let i = 0; i < values.length; i += 1) {
+      unionSet.add(values[i]);
+    }
+    values = set.values();
+    for (let i = 0; i < values.length; i += 1) {
+      unionSet.add(values[i]);
+    }
+    return unionSet;
+  }
 }
 
 module.exports = Set;
