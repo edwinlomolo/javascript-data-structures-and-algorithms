@@ -59,4 +59,16 @@ describe("Interacting with set data structure", () => {
       expect(setValues[i]).to.be.equal(expected[i]);
     }
   });
+  it("Should be able to perform set intersecion operation", () => {
+    const setB = new Set();
+    setB.add(2);
+    setB.add(3);
+    setB.add(4);
+    const intersectSet = set.intersection(setB);
+    const setValues = intersectSet.values();
+    const values = [2,3];
+    for (let i = 0; i < setValues.length; i += 1) {
+      expect(setValues[i]).to.be.equal(values[i]);
+    }
+  });
 });
