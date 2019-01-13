@@ -86,6 +86,20 @@ class Set {
     }
     return differenceSet;
   }
+
+  subset(set) {
+    // This checks if set A is a subset of set B
+    if (this.size() > set.size()) {
+      return false;
+    }
+    const values = this.values();
+    for (let i = 0; i < values.length; i += 1) {
+      if (!set.has(values[i])) {
+        return false;
+      }
+    }
+    return true;
+  }
 }
 
 module.exports = Set;
