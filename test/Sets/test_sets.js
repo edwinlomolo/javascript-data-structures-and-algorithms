@@ -83,4 +83,18 @@ describe("Interacting with set data structure", () => {
       expect(values[i]).to.be.equal(expected[i]);
     }
   });
+  it("Should be able to perform set subset operation", () => {
+    const setB = new Set();
+    setB.add(1);
+    setB.add(2);
+    setB.add(3);
+    setB.add(4);
+    const setC = new Set();
+    setC.add(4);
+    setC.add(5);
+    setC.add(6);
+    setC.add(7);
+    expect(set.subset(setB)).to.be(true);
+    expect(set.subset(setC)).to.be(false);
+  });
 });
