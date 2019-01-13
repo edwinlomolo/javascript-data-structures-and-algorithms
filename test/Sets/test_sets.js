@@ -66,9 +66,21 @@ describe("Interacting with set data structure", () => {
     setB.add(4);
     const intersectSet = set.intersection(setB);
     const setValues = intersectSet.values();
-    const values = [2,3];
+    const expected = [2,3];
     for (let i = 0; i < setValues.length; i += 1) {
-      expect(setValues[i]).to.be.equal(values[i]);
+      expect(setValues[i]).to.be.equal(expected[i]);
+    }
+  });
+  it("Should be able to perform set difference operation", () => {
+    const setB = new Set();
+    setB.add(2);
+    setB.add(3);
+    setB.add(4);
+    const differenceSet = set.difference(setB);
+    const values = differenceSet.values();
+    const expected = [1];
+    for (let i = 0; i < values.length; i += 1) {
+      expect(values[i]).to.be.equal(expected[i]);
     }
   });
 });
