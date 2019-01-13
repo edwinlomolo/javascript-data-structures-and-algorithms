@@ -61,6 +61,19 @@ class Set {
     }
     return unionSet;
   }
+
+  intersection(set) {
+    // This returns elements that exists in both sets
+    const intersectionSet = new Set();
+
+    const values = this.values();
+    for (let i = 0; i < values.length; i += 1) {
+      if (set.has(values[i])) {
+        intersectionSet.add(values[i]);
+      }
+    }
+    return intersectionSet;
+  }
 }
 
 module.exports = Set;
