@@ -74,6 +74,18 @@ class Set {
     }
     return intersectionSet;
   }
+
+  difference(set) {
+    // This returns elements that does not exist in both sets
+    const differenceSet = new Set();
+    const values = this.values();
+    for (let i = 0; i < values.length; i += 1) {
+      if (!set.has(values[i])) {
+        differenceSet.add(values[i]);
+      }
+    }
+    return differenceSet;
+  }
 }
 
 module.exports = Set;
