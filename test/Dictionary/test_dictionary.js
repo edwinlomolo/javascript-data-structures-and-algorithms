@@ -24,7 +24,7 @@ describe("Interacting with dictionary data structure", () => {
     expect(dict.get('jane')).to.be.equal('janedoe@email.com');
   });
   it("Should be able to search for a value in the dictionary using it's key", () => {
-    expect(dict.get('pence')).to.be.equal('pence@email.com');
+    expect(dict.get('mike')).to.be.equal('pence@email.com');
     expect(dict.get('blake')).to.be.equal('runner@email.com');
   });
   it("Should be able to check if a key exists in the dictionary", () => {
