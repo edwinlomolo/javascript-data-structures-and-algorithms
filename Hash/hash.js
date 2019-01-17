@@ -6,7 +6,7 @@ class Hash {
   }
 
   loseloseHashCode(key) {
-    const hash = 0;
+    let hash = 0;
     for (let i = 0; i < key.length; i += 1) {
       hash += key.charCodeAt(i);
     }
