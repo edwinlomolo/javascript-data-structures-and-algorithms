@@ -18,4 +18,14 @@ describe("Interacting with hash data structure", () => {
     expect(table.get('pence')).to.be.equal('51 111 3487');
     expect(table.get('blake')).to.be.equal('blake@yahoo.com');
   });
+  it("Should be able to search for a value by key in the hash table", () => {
+    expect(table.get('edwin')).to.be.equal('edwin@email.com');
+    expect(table.get('blake')).to.be.equal('blake@yahoo.com');
+  });
+  it("Should be able to remove/delete a value from the hash table", () => {
+    table.remove('edwin');
+    table.remove('pence');
+    expect(table.get('edwin')).to.be(undefined);
+    expect(table.get('pence')).to.be(undefined);
+  });
 });
