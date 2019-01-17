@@ -15,18 +15,18 @@ class Hash {
 
   put(key, value) {
     // This adds a new item to the hash table(or it can also update it)
-    const position = loseloseHashCode(key);
-    this.table[position] = value; 
+    const position = this.loseloseHashCode(key);
+    this.table[position] = value;
   }
 
   remove(key) {
     // This removes the value from the hash table using the key
-    this.table[loseloseHashCode(key)] = undefined;
+    this.table[this.loseloseHashCode(key)] = undefined;
   }
 
   get(key) {
     // This returns a specific value searched by the key
-    return this.table[loseloseHashCode(key)];
+    return this.table[this.loseloseHashCode(key)];
   }
 }
 
