@@ -2,7 +2,7 @@
 
 JavaScript is a very powerful language. It is the most popular language in the world and is the most prominent language on the Internet :sunglasses:
 
-For example, [GitHub](https://github.com)(the world's largest code host), hosts over a million JavaScript repositories(the largest number of projects is in JavaScript; refer [here](https://octoverse.github.com/projects)). The number of projects in JavaScript in GitHub grows every year.
+[GitHub](https://github.com)(the world's largest code host), hosts over a million JavaScript repositories(the largest number of projects is in JavaScript; refer [here](https://octoverse.github.com/projects)). The number of projects in JavaScript in GitHub grows every year.
 
 JavaScript is not a language that can be used on the front-end only. It can also be used in the back-end, and Node.js is the technology responsible for this. The number of [**Node Package Module(NPM)**](https://www.npmjs.com) also grows exponentially.
 
@@ -14,7 +14,7 @@ Learning about data structures and algorithms is very important. The first reaso
 
 Data structures and algorithms are the subject of interviews during your job search in the future.
 
-During our learning and coding time, we will also implement test cases for our data structures and algorithms just to make sure they work as we suppose and also it will a minimal introduction to testing in JavaScript.
+During our learning and coding time, we will be writing test cases for our data structures and algorithms just to make sure they work as we suppose and also we will be implementing or running our data structures and algorithms by writing simple test cases. This will also be a minimal introduction to testing in JavaScript.
 
 We are going to cover the following:
 
@@ -24,6 +24,7 @@ We are going to cover the following:
 * Linked Lists
 * Sets
 * Dictionary
+* Hashes
 * Trees
 * Graphs
 * Sorting and Searching algorithms
