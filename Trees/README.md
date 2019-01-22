@@ -8,7 +8,6 @@ We will cover the following:
 * Creating a tree data structure
 * Traversing a tree
 * Adding and removing nodes
-* The AVL tree
 
 ## The tree data structure
 
