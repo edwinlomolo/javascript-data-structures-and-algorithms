@@ -1,4 +1,4 @@
-# JavaScript Data Structures and Algorithms for dummies
+# Introduction to JavaScript Data Structures and Algorithms for dummies
 
 JavaScript is a very powerful language. It is the most popular language in the world and is the most prominent language on the Internet :sunglasses:
 
@@ -18,13 +18,13 @@ During our learning and coding time, we will be writing test cases for our data 
 
 We are going to cover the following:
 
-* Arrays
-* Stacks
-* Queues
-* Linked Lists
-* Sets
-* Dictionary
-* Hashes
-* Trees
-* Graphs
-* Sorting and Searching algorithms
+* **Arrays**
+* **Stacks**
+* **Queues**
+* **Linked Lists**
+* **Sets**
+* **Dictionary**
+* **Hashes**
+* **Trees**
+* **Graphs**
+* **Sorting and Searching algorithms**
