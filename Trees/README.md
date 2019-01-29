@@ -15,6 +15,8 @@ A tree is an abstract model of a hierarchical structure. The most common example
 
 ## Tree terminology
 
+![Image of a tree data structure](https://res.cloudinary.com/dazskjikr/image/upload/v1548754268/binary-tree-to-DLL.png)
+
 A tree consists of nodes with a parent-child relationship. Each node has a parent(except for the first node at the top) and zero or more children.
 
 The top node of a tree is called the **root**. It is the node that does not have a parent. Each element of a tree is called a node. There are **internal nodes** and **external nodes**. An internal node is a node with atleast one child. A node that does not have children is called an external node.
