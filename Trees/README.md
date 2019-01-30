@@ -19,13 +19,13 @@ A tree is an abstract model of a hierarchical structure. The most common example
 
 A tree consists of nodes with a parent-child relationship. Each node has a parent(except for the first node at the top) and zero or more children.
 
-The top node of a tree is called the **root**. It is the node that does not have a parent. Each element of a tree is called a node. There are **internal nodes** and **external nodes**. An internal node is a node with atleast one child. A node that does not have children is called an external node.
+The top node of a tree is called the **root**(**1**). It is the node that does not have a parent. Each element of a tree is called a node. There are **internal nodes** and **external nodes**. An internal node is a node with atleast one child(**2**,**4**,**5**,**3**,**6**, and **7** are internal nodes). A node that does not have children is called an external node or leaf(**8**,**9**,**10**,**11**,**13**, and **14** are leaves).
 
-A node can have **ancestors** and **descendants**. The ancestors of a node(except the root) are parents, grandparent, great-grandparent, and so on. The descendants of a node are children, grandchildren, great-grandchildren, and so on.
+A node can have **ancestors** and **descendants**. The ancestors of a node(except the root) are parents, grandparent, great-grandparent, and so on. The descendants of a node are children, grandchildren, great-grandchildren, and so on. For example, node 4 has 2 and 1 as its ancestors and **8** and **9** as its descendants.
 
-A **Subtree** consists of a node and its descendants.
+A **Subtree** consists of a node and its descendants. For example, **5**,**10**, and **11** constitute a subtree from the tree.
 
-The **depth** of a node consists of the number of ancestors.
+The **depth** of a node consists of the number of ancestors. For example, node **8** has a depth of 3 because it has three ancestors(**4**,**2**, and **1**).
 
 The **height** of a tree consists of the maximum depth of any node. The tree can also be broken down into levels. The root node is always on **level 0**, its children are on **level 1**, and so on.
 
