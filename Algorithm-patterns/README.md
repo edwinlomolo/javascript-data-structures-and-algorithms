@@ -10,7 +10,7 @@ A method or function is recursive if it can call itself directly.
 
 ```javascript
 function recursiveFunction(params) {
-  recursuveFunction(params);
+  recursuveFunction(params); // Recursive call
 }
 ```
 
@@ -52,3 +52,24 @@ function recursiveFunc() {
  Depending on your operating system and browser, the values might be different, but they will be close.
 
  ## The Fibonacci sequence
+
+ This is a sequence, such that each number is the sum of the two preceeding ones, starting from 0 and 1. That is, 
+
+ * The Fibonacci sequence of 1 or 2 is 1.
+ * The Fibonacci sequence of `n` (for `n > 2`) is the Fibonacci of (`n-1`) + Fibonacci of (`n-2`)
+
+Fibonacci function implementation:
+
+```javascript
+
+function fib(num) {
+  if (num === 1 || num === 2) {
+    return 1;
+  }
+  return fib(num-1) + fib(num-2); // Recursive call happens here
+}
+```
+
+We just implemened Fibonacci function using recursion. But, why recursion? Is it faster? Recursion is not faster than the normal version; it is slower. However, note that recursion is clear to understand, and it requires less code as well.
+
+So we usually use recursion because it is easier to solve problems using it.
