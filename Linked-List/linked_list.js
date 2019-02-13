@@ -1,6 +1,6 @@
 // Linked list data structure definition
 
-const Node = require("../utils/linked_list_node");
+const Node = require("../utils/Linked-list/linked_list_node");
 
 class LinkedList {
   constructor() {
