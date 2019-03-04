@@ -2,7 +2,7 @@
 
 class Node {
   constructor(key) {
-    this.key = key;
+    this.key = key; // Hold the node element
     this.left = null;
     this.right = null;
   }
