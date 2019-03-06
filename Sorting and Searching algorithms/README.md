@@ -8,4 +8,11 @@ You will learn about the most common used sorting and searching algorithms, such
 
 You should understand that you need to learn how to sort first and then search for the information given. We will cover some of the most well known sorting algorithms in computer science. We will start with the slowest one, and then we will some better algorithms. We will use an `array`(list) to represent the data structure that we want to sort and search.
 
-All the sort and search algorithms will be explained here and also with some minimal inline documentation.
+All the sort and search algorithms will be explained here and also with some minimal inline documentation. We will cover:
+
+* Bubble sort algorithm
+* Selection sort algorithm
+* Insertion sort algorithm
+* Merge sort algorithm
+* Quick sort algorithm
+* Heap sort algorithm
