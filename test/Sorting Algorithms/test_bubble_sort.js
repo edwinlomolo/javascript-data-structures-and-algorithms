@@ -6,8 +6,8 @@ const expect = require("expect.js");
 const items = [12, 10, 23, 40];
 const expected = [10, 12, 23, 40];
 
-describe("Bubble sort algorithms implementation", () => {
-  it("Expect to return a sorted array of integers", () => {
+describe("Implementing sorting algorithms", () => {
+  it("Should be able to perform a sort using bubble sort algorithm", () => {
     const sortedArray = bubbleSort(items);
     for (let i = 0; i < sortedArray.length; i += 1) {
       expect(expected[i]).to.be.equal(sortedArray[i]);
