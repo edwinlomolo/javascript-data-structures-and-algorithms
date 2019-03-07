@@ -11,10 +11,12 @@
 const swap = require("../utils/Sorting and searching algorithms/swap");
 
 const selectionSort = (array) => {
-  for (let i = 0; i < array.length - 1; i += 1) {
-    let indexMin = i;
-    for (let j = indexMin; j < array.length; j += 1) {
-      if (array[indexMin] > array[j]) {
+  const arrSort = array;
+  let indexMin;
+  for (let i = 0; i < arrSort.length - 1; i += 1) {
+    indexMin = i;
+    for (let j = indexMin; j < arrSort.length; j += 1) {
+      if (arrSort[indexMin] > arrSort[j]) {
         indexMin = j;
       }
     }
@@ -22,6 +24,7 @@ const selectionSort = (array) => {
       swap(i, indexMin);
     }
   }
+  return arrSort;
 };
 
 module.exports = selectionSort;
