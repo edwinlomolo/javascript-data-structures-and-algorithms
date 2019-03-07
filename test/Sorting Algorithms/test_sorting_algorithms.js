@@ -4,8 +4,8 @@ const bubbleSort = require("../../Sorting and Searching algorithms/bubble_sort")
 const selectionSort = require("../../Sorting and Searching algorithms/selection_sort");
 const expect = require("expect.js");
 
-const items = [12, 10, 23, 40];
-const expected = [10, 12, 23, 40];
+const items = [12, 10, 23, 40, 40, 42, 2, 9];
+const expected = [2, 9, 10, 12, 23, 40, 40, 42];
 let sortedArray;
 
 describe("Implementing sorting algorithms", () => {
