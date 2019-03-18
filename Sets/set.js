@@ -32,7 +32,7 @@ class Set {
     // This removes all the items from the set
     this.items = {};
   }
- 
+
   size() {
     // This returns how many elements the set contains
     return Object.keys(this.items).length;
