@@ -14,6 +14,7 @@
     "no-dupe-args": 1,
     "spaced-comment": "off",
     "arrow-body-style": "off",
+    "arrow-parens": ["error", "as-needed"],
     "semi": ["error", "always"],
     "no-dupe-keys": "error",
     "eqeqeq": ["error", "always"],
