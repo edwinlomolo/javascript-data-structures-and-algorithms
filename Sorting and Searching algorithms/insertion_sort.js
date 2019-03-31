@@ -12,7 +12,7 @@
  * and so on.
  */
 
-const insertionSort = (array) => {
+const insertionSort = array => {
   const arrSort = array;
   let j;
   let temp;

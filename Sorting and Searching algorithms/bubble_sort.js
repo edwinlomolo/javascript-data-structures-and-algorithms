@@ -10,7 +10,7 @@
 
 const swap = require("../utils/Sorting and searching algorithms/swap");
 
-const bubbleSort = (array) => {
+const bubbleSort = array => {
   const arrSort = array;
   for (let i = 0; i < arrSort.length; i += 1) {
     for (let j = 0; j < arrSort.length - 1; j += 1) {
