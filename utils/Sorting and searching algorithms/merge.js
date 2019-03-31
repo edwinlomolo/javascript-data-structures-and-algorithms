@@ -7,18 +7,18 @@ const merge = (left, right) => {
 
   while (il < left.length && ir < right.length) {
     if (left[il] < right[ir]) {
-      result.push(left[(il += 1)]);
+      result.push(left[il += 1]);
     } else {
-      result.push(right[(ir += 1)]);
+      result.push(right[ir += 1]);
     }
   }
 
   while (il < left.length) {
-    result.push(left[(il += 1)]);
+    result.push(left[il += 1]);
   }
 
   while (ir < right.length) {
-    result.push(right[(ir += 1)]);
+    result.push(right[ir += 1]);
   }
 
   return result;
@@ -35,7 +35,9 @@ const mergeSortRec = array => {
   const left = sortArray.slice(0, mid);
   const right = sortArray.slice(mid, sortArray.length);
 
-  return merge(mergeSortRec(left), mergeSortRec(right));
+  merge(mergeSortRec(left), mergeSortRec(right));
+
+  return sortArray;
 };
 
 module.exports = mergeSortRec;
