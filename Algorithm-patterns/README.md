@@ -51,12 +51,12 @@ function recursiveFunc() {
 
  Depending on your operating system and browser, the values might be different, but they will be close.
 
- ## The Fibonacci sequence
+## The Fibonacci sequence
 
- This is a sequence, such that each number is the sum of the two preceeding ones, starting from 0 and 1. That is, 
+ This is a sequence, such that each number is the sum of the two preceeding ones, starting from 0 and 1. That is,
 
- * The Fibonacci sequence of 1 or 2 is 1.
- * The Fibonacci sequence of `n` (for `n > 2`) is the Fibonacci of (`n-1`) + Fibonacci of (`n-2`)
+* The Fibonacci sequence of 1 or 2 is 1.
+* The Fibonacci sequence of `n` (for `n > 2`) is the Fibonacci of (`n-1`) + Fibonacci of (`n-2`)
 
 Fibonacci function implementation:
 
