@@ -16,7 +16,7 @@ const heapSort = array => {
   while (heapSize > 1) {
     heapSize -= 1;
     swap(arrSort, 0, heapSize);
-    heapify(arrSort, heapSize);
+    heapify(arrSort, heapSize, 0);
   }
   return arrSort;
 };
