@@ -15,7 +15,7 @@
  *
  */
 
-const mergeSortRec = require("../utils/Sorting and searching algorithms/merge");
+const mergeSortRec = require("../utils/Sorting algorithms/merge");
 
 const mergeSort = array => {
   const arrSorted = mergeSortRec(array);

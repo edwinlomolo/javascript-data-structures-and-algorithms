@@ -1,11 +1,11 @@
 // Test cases for bubble sort algorithm implementation
 
-const bubbleSort = require("../../Sorting and Searching algorithms/bubble_sort");
-const selectionSort = require("../../Sorting and Searching algorithms/selection_sort");
-const insertionSort = require("../../Sorting and Searching algorithms/insertion_sort");
-const mergeSort = require("../../Sorting and Searching algorithms/merge_sort");
-const quickSort = require("../../Sorting and Searching algorithms/quickSort");
-const heapSort = require("../../Sorting and Searching algorithms/heap_sort");
+const bubbleSort = require("../../Sorting algorithms/bubble_sort");
+const selectionSort = require("../../Sorting algorithms/selection_sort");
+const insertionSort = require("../../Sorting algorithms/insertion_sort");
+const mergeSort = require("../../Sorting algorithms/merge_sort");
+const quickSort = require("../../Sorting algorithms/quickSort");
+const heapSort = require("../../Sorting algorithms/heap_sort");
 const expect = require("expect.js");
 
 const items = [12, 10, 23, 40, 40, 42, 2, 9];

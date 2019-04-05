@@ -1,6 +1,6 @@
 // Heap sort algorithm helper methods
 
-const swap = require("../Sorting and searching algorithms/swap");
+const swap = require("../Sorting algorithms/swap");
 
 const heapify = (array, heapSize, i) => {
   const left = i * 2 + 1;

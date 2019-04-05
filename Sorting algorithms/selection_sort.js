@@ -8,9 +8,9 @@
  * and so on
  */
 
-const swap = require("../utils/Sorting and searching algorithms/swap");
+const swap = require("../utils/Sorting algorithms/swap");
 
-const selectionSort = (array) => {
+const selectionSort = array => {
   const arrSort = array;
   let indexMin;
   for (let i = 0; i < arrSort.length - 1; i += 1) {

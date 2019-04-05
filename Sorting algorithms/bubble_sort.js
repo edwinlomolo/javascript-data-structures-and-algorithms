@@ -8,7 +8,7 @@
  * the second one
  */
 
-const swap = require("../utils/Sorting and searching algorithms/swap");
+const swap = require("../utils/Sorting algorithms/swap");
 
 const bubbleSort = array => {
   const arrSort = array;

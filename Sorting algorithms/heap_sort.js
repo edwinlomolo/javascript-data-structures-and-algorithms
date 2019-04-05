@@ -4,9 +4,9 @@
  * sort, we need to manage the array as a binary tree.
  */
 
-const { buildHeap } = require("../utils/Sorting and searching algorithms/heap");
-const { heapify } = require("../utils/Sorting and searching algorithms/heap");
-const swap = require("../utils/Sorting and searching algorithms/swap");
+const { buildHeap } = require("../utils/Sorting algorithms/heap");
+const { heapify } = require("../utils/Sorting algorithms/heap");
+const swap = require("../utils/Sorting algorithms/swap");
 
 const heapSort = array => {
   const arrSort = array;

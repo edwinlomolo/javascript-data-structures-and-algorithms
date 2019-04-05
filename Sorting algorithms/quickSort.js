@@ -25,7 +25,7 @@
  * completely sorted.
  */
 
-const quick = require("../utils/Sorting and searching algorithms/quick");
+const quick = require("../utils/Sorting algorithms/quick");
 
 const quickSort = array => {
   const sortArray = quick(array, 0, array.length - 1);
