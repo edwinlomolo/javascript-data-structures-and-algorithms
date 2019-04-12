@@ -7,6 +7,10 @@ const {
   inOrderTraverseNode,
   preOrderTraverseNode,
   postOrderTraverseNode,
+  minNode,
+  maxNode,
+  searchNode,
+  removeNode,
 } = require("../utils/Tree/tree_node");
 
 class BinaryTree {
@@ -26,7 +30,9 @@ class BinaryTree {
   }
 
   // Search for the specified key in the tree, returns true if found, otherwise returns false
-  search(key) {}
+  search(key) {
+    return searchNode(this.root, key);
+  }
 
   // Visits all the nodes of the tree using in-order traverse; from the smallest to the largest
   // inOrderTraverse receives a callback function that we want to execute when the node is visited,
@@ -52,13 +58,19 @@ class BinaryTree {
   }
 
   // Returns the min value/key in the tree
-  min() {}
+  min() {
+    return minNode(this.root);
+  }
 
   // Returns the max value/key in the tree
-  max() {}
+  max() {
+    return maxNode(this.root);
+  }
 
   // Removes the key from the tree
-  remove(key) {}
+  remove(key) {
+    this.root = removeNode(this.root, key);
+  }
 }
 
 module.exports = BinaryTree;
