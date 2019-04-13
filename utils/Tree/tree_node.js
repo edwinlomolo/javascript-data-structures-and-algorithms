@@ -14,14 +14,17 @@ const insertNode = (node, newNode) => {
     if (node.left === null) {
       /* eslint-disable */
       node.left = newNode;
+    } else {
+      insertNode(node.left, newNode);
     }
-    insertNode(node.left, newNode);
-  }
-  if (node.right === null) {
+  } else {
+    if (node.right === null) {
     /* eslint-disable */
     node.right = newNode;
+    } else {
+      insertNode(node.right, newNode);
+    }
   }
-  insertNode(node.right, newNode);
 };
 
 // inOrderTraverseNode helper function
