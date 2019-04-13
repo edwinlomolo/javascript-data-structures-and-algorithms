@@ -67,6 +67,11 @@ class BinaryTree {
     return maxNode(this.root);
   }
 
+  // Get the root element in a binary tree data structure
+  getRoot() {
+    return this.root;
+  }
+
   // Removes the key from the tree
   remove(key) {
     this.root = removeNode(this.root, key);
