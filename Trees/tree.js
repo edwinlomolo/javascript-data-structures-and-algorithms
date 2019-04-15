@@ -25,8 +25,9 @@ class BinaryTree {
 
     if (this.root === null) {
       this.root = newNode;
+    } else {
+      insertNode(this.root, newNode);
     }
-    insertNode(this.root, newNode);
   }
 
   // Search for the specified key in the tree, returns true if found, otherwise returns false

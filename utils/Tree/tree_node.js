@@ -19,8 +19,8 @@ const insertNode = (node, newNode) => {
     }
   } else {
     if (node.right === null) {
-    /* eslint-disable */
-    node.right = newNode;
+      /* eslint-disable */
+      node.right = newNode;
     } else {
       insertNode(node.right, newNode);
     }
