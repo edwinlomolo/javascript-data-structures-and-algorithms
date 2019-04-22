@@ -21,6 +21,8 @@ describe("Interacting with Graph data structure", () => {
     for (let i = 0; i < vertices.length; i += 1) {
       graph.addVertex(vertices[i]);
     }
+    expect(graph.vertices.length).to.be.above(0);
+    expect(Object.keys(graph.adjList).length).to.be.above(0);
     expect(graph.vertices.length).to.be.equal(9);
     graph.addEdge('A', 'B');
     graph.addEdge('A', 'C');
