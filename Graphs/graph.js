@@ -32,6 +32,7 @@ class Graph {
   toString() {
     let s = "";
     for (let i = 0; i < this.vertices.length; i += 1) {
+      s += `${this.vertices[i]} -> `;
       const neighbors = this.adjList.get(this.vertices[i]);
       for (let j = 0; j < neighbors.length; j += 1) {
         s += `${neighbors[j]} `;
