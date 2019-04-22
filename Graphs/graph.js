@@ -25,6 +25,21 @@ class Graph {
     this.adjList.get(v).push(w);
     this.adjList.get(w).push(v);
   }
+
+  /**
+   * Print graph to the console
+   */
+  toString() {
+    let s = "";
+    for (let i = 0; i < this.vertices.length; i += 1) {
+      const neighbors = this.adjList.get(this.vertices[i]);
+      for (let j = 0; j < neighbors.length; j += 1) {
+        s += `${neighbors[j]} `;
+      }
+      s += "\n";
+    }
+    return s;
+  }
 }
 
 module.exports = Graph;
