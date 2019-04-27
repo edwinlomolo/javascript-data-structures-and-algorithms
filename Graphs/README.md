@@ -95,19 +95,16 @@ The BFS and DFS algorithms are basically the same with only one difference, whic
 
 | **Algorithm** | **Data Structure** | **Description**                                              |
 | ------------- | ------------------ | ------------------------------------------------------------ |
-| DFS           | Stack              | By storing the vertices in a stack, the vertices are explored by lurching along a path, visiting the new adjacent vertex if there is one available. |
+| DFS           | Stack              | By storing the vertices in a stack, the vertices are explored by lurching along a path, visiting a new adjacent vertex if there is no one available. |
+| BFS           | Queue              | By storing the vertices in a queue, the oldest unexplored vertices are explored first. |
 
+When marking the vertices that we have already visited, we will use three colors to reflect their status:
 
+- **White**: This represents that the vertex has not been visited.
+- **Grey**: This represents that the vertex has been visited but not explored.
+- **Black**: This represents that the vertex has been completely explored.
 
+This is why the vertex must be visited twice at most.
 
-
-
-
-
-
-
-
-
-
-
+### Breadth-first search (BFS)
 
