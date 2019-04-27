@@ -17,13 +17,26 @@ During our learning and coding time, we will be writing test cases for our data 
 
 We are going to cover the following:
 
-* **Arrays**
-* **Stacks**
-* **Queues**
-* **Linked Lists**
-* **Sets**
-* **Dictionary**
-* **Hashes**
-* **Trees**
-* **Graphs**
-* **Sorting and Searching algorithms**
+- Data Structure
+  - Sequential data structures
+    - *Arrays*
+    - *Stack*
+    - *Queue*
+    - *Dictionary*
+    - *Set*
+    - *Hash*
+    - *Linked Lists*
+  - Non-sequential data structure
+    - *Graphs*
+    - *Binary Trees*
+- Sorting algorithms
+  - *Bubble sort*
+  - *Selection sort*
+  - *Insertion sort*
+  - *Merge sort*
+  - *Quick sort*
+  - *Heap sort*
+- Searching algorithms
+  - *Sequential search*
+  - *Binary search*
+
