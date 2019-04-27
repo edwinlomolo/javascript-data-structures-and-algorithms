@@ -76,3 +76,38 @@ We can also represent a graph using the **incidence matrix**. In an incidence ma
 ![1555845884714](/home/lomolo/.config/Typora/typora-user-images/1555845884714.png)
 
 An incidence matrix is usually used to save space and memory when we have more edges than vertices.
+
+### Graph traversals
+
+Similar to the tree data structure, we can also visit all the nodes of a graph. There are two algorithms that can be used to traverse a graph, called **breadth-first search** (**BFS**) and **depth-first search** (**DFS**). Traversing a graph can be used to:
+
+- find a specific vertex or path between two vertices
+- check whether the graph is connected
+- check whether the graph contains cycles
+
+The idea of graph traversal algorithms is that we must track each vertex when we first visit it and keep track of which vertices have not yet been completely visited. For both traversal algorithms, we need to specify which will be the first vertex to be visited.
+
+To completely explore a vertex, we need to look at each edge of this vertex. For each edge connected to the vertex that has not been visited yet, we will mark it as discovered and add it to the list of vertices to be visited.
+
+In order to have efficient algorithms, we must visit each vertex twice at the most when each of its endpoints is explored. Every edge and vertex in the connected graph will be visited.
+
+The BFS and DFS algorithms are basically the same with only one difference, which is the data structure used to store the list of vertices to be visited.
+
+| **Algorithm** | **Data Structure** | **Description**                                              |
+| ------------- | ------------------ | ------------------------------------------------------------ |
+| DFS           | Stack              | By storing the vertices in a stack, the vertices are explored by lurching along a path, visiting the new adjacent vertex if there is one available. |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
