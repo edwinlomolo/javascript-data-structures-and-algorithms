@@ -5,7 +5,7 @@ const expect = require("expect.js");
 
 let stack;
 
-describe("Interacting with stack data structure", () => {
+describe("STACK DATA STRUCTURE", () => {
   it("Should be able to create a new stack", () => {
     stack = new Stack();
     expect(stack.isEmpty()).to.be(true);

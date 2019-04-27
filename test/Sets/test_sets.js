@@ -10,7 +10,7 @@ before(() => {
   set = new Set();
 });
 
-describe("Interacting with set data structure", () => {
+describe("SET DATA STRUCTURE", () => {
   it("Should be able to create/initialize a new set", () => {
     expect(set.size()).to.be.equal(0);
   });

@@ -10,7 +10,7 @@ beforeEach(() => {
   let index;
 })
 
-describe("Interacting with searching algorithms", () => {
+describe("SEARCHING ALGORITHMS", () => {
   it("Should be able to perform a search using the sequential search algorithm", () => {
     index = sequentialSearch(4, data);
     expect(data[index]).to.be.equal(4);

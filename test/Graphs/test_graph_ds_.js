@@ -11,7 +11,7 @@ before(() => {
   graph = new Graph();
 });
 
-describe("Interacting with Graph data structure", () => {
+describe("GRAPHS DATA STRUCTURE", () => {
   it("Should be able to initialize a new Graph data structure", () => {
     expect(graph.vertices.length).to.be.equal(0);
     expect(Object.keys(graph.adjList.items).length).to.be.equal(0);

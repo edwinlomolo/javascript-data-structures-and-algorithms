@@ -10,7 +10,7 @@ beforeEach(() => {
 });
 
 // Test cases
-describe("Interacting with Binary Tree data structure", () => {
+describe("BINARY TREE DATA STRUCTURE", () => {
   it("Should be able to initialize a new tree data structure", () => {
     expect(binaryTree.getRoot()).to.be(null); // The root should be null
   });

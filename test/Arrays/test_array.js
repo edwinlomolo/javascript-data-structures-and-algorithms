@@ -7,7 +7,7 @@ beforeEach(() => {
   let numbers;
 });
 
-describe("Interacting with an array data structure", () => {
+describe("ARRAY DATA STRUCTURE", () => {
   it("Should be able to initialize an array using new constructor", () => {
     numbers = new Array();
     expect(numbers.length).to.be.equal(0);

@@ -10,7 +10,7 @@ before(() => {
   linkedList = new LinkedList();
 })
 
-describe("Interacting with Linked list data structure", () => {
+describe("LINKED LIST DATA STRUCTURE", () => {
   it("Should be able to create/initialise a linked list", () => {
     expect(linkedList.size()).to.be.equal(0);
     expect(linkedList.isEmpty()).to.be(true);

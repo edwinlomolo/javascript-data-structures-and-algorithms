@@ -10,7 +10,7 @@ before(() => {
   dict = new Dictionary();
 });
 
-describe("Interacting with dictionary data structure", () => {
+describe("DICTIONARY DATA STRUCTURE", () => {
   it("Should be able to create/initialize a new dictionary", () => {
     expect(dict.size()).to.be.equal(0);
   });

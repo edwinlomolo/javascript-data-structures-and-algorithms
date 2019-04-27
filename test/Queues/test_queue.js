@@ -10,7 +10,7 @@ before(() => {
   queue = new Queue();
 })
 
-describe("Interacting with Queue data structure", () => {
+describe("QUEUE DATA STRUCTURE", () => {
   it("Should be able to create/initialize a new queue", () => {
     expect(queue.isEmpty()).to.be(true);
     expect(queue.size()).to.be.equal(0);
