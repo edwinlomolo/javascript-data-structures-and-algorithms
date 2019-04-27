@@ -17,7 +17,7 @@ beforeEach(() => {
   sortedArray = [];
 });
 
-describe("SORTING DATA STRUCTURE", () => {
+describe("SORTING ALGORITHMS", () => {
   // Bubble sort algorithm implementation
   it("Should be able to perform a sort using bubble sort algorithm", () => {
     sortedArray = bubbleSort(items);
