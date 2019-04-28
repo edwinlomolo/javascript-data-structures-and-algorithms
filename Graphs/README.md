@@ -108,3 +108,18 @@ This is why the vertex must be visited twice at most.
 
 ### Breadth-first search (BFS)
 
+BFS algorithm starts traversing the graph from the first specified vertex and visits all of its neighbors(adjacent vertices) first, one layer of the graph at a time.
+
+It visits the vertices first widely and then deeply.
+
+![1556449141086](/home/lomolo/.config/Typora/typora-user-images/1556449141086.png)
+
+Pseudo code for the BFS algorithm, starting at vertex `v`:
+
+-  Create a queue `Q`
+- Mark `v` as discovered(grey) and enqueue `v` into `Q`
+- While `Q` is not empty, perform the following steps:
+  - Dequeue `u` from `Q`
+  - Mark `u` as discovered(grey)
+  - Enqueue all the unvisited(white) neighbors `w` of `u`
+  - Mark `u` as explored(black)
