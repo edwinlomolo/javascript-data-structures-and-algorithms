@@ -47,6 +47,6 @@ describe("GRAPHS DATA STRUCTURE", () => {
     }
   });
   it("Should be able to perform Depth-First-Search on a Graph", () => {
-    graph.dfs();
+    graph.dfs((value) => console.log(value));
   });
 });
