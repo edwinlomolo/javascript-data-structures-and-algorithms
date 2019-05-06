@@ -80,7 +80,7 @@ class Graph {
     const color = initializeColor(this.vertices);
     for (let i = 0; i < this.vertices.length; i += 1) {
       if (color[this.vertices[i]] === 'white') {
-        this.dfsVisit(this.vertices[i], color, cb, this.adjList);
+        this.dfsVisit(this.vertices[i], color, cb);
       }
     }
   }
