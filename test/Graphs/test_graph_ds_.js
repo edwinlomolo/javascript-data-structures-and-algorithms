@@ -46,4 +46,7 @@ describe("GRAPHS DATA STRUCTURE", () => {
       expect(visitedVertex[i]).to.be.equal(vertices[i]);
     }
   });
+  it("Should be able to perform Depth-First-Search on a Graph", () => {
+    graph.dfs();
+  });
 });
