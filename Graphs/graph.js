@@ -1,5 +1,7 @@
 // Graph data structure class definition
 const Dictionary = require("../Dictionaries/dictionary");
+const Queue = require("../Queues/queue");
+const { initializeColor } = require("../utils/Graphs/graph");
 
 class Graph {
   constructor() {
@@ -24,6 +26,32 @@ class Graph {
   addEdge(v, w) {
     this.adjList.get(v).push(w);
     this.adjList.get(w).push(v);
+  }
+
+  /**
+   * BFS algorithm
+   */
+  bfs(v, cb) {
+    const color = initializeColor(this.vertices);
+    const queue = new Queue();
+    queue.enqueue(v);
+
+    while (!queue.isEmpty()) {
+      const u = queue.dequeue();
+      const neighbors = this.adjList.get(u);
+      color[u] = 'grey';
+      for (let i = 0; i < neighbors.length; i += 1) {
+        const w = neighbors[i];
+        if (color[w] === 'white') {
+          color[w] = 'grey';
+          queue.enqueue(w);
+        }
+      }
+      color[u] = 'black';
+      if (cb) {
+        cb(u);
+      }
+    }
   }
 
   /**
