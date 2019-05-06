@@ -6,6 +6,8 @@ const expect = require("expect.js");
 const Graph = require("../../Graphs/graph");
 let graph;
 
+const vertices = ["A", "B", "C", "D", "E", "F", "G", "H", "I"];
+
 // Hook
 before(() => {
   graph = new Graph();
@@ -17,7 +19,6 @@ describe("GRAPHS DATA STRUCTURE", () => {
     expect(Object.keys(graph.adjList.items).length).to.be.equal(0);
   });
   it("Should be able to add a vertex to the Graph", () => {
-    const vertices = ["A", "B", "C", "D", "E", "F", "G", "H", "I"];
     for (let i = 0; i < vertices.length; i += 1) {
       graph.addVertex(vertices[i]);
     }
@@ -34,5 +35,15 @@ describe("GRAPHS DATA STRUCTURE", () => {
     graph.addEdge('B', 'E');
     graph.addEdge('B', 'F');
     graph.addEdge('E', 'I');
+  });
+  it("Should be able to perform Breadth-First-Search on a Graph", () => {
+    const visitedVertex = [];
+    const getVisitedNodes = value => {
+      visitedVertex.push(value);
+    };
+    graph.bfs(vertices[0], getVisitedNodes);
+    for (let i = 0; i < vertices.length; i += 1) {
+      expect(visitedVertex[i]).to.be.equal(vertices[i]);
+    }
   });
 });
