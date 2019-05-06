@@ -1,7 +1,7 @@
 // Graph data structure class definition
 const Dictionary = require("../Dictionaries/dictionary");
 const Queue = require("../Queues/queue");
-const { initializeColor } = require("../utils/Graphs/graph");
+const { initializeColor, dfsVisit } = require("../utils/Graphs");
 
 class Graph {
   constructor() {
@@ -50,6 +50,18 @@ class Graph {
       color[u] = 'black';
       if (cb) {
         cb(u);
+      }
+    }
+  }
+
+  /**
+   * DFS algorithm
+   */
+  dfs(v, cb) {
+    const color = initializeColor(this.vertices);
+    for (let i = 0; i < this.vertices.length; i += 1) {
+      if (color[this.vertices[i]] === 'white') {
+        dfsVisit(this.vertices[i], color, cb, this.adjList);
       }
     }
   }
