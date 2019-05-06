@@ -106,7 +106,7 @@ When marking the vertices that we have already visited, we will use three colors
 
 This is why the vertex must be visited twice at most.
 
-### Breadth-first search (BFS)
+### Breadth-First-Search (BFS) algorithm
 
 BFS algorithm starts traversing the graph from the first specified vertex and visits all of its neighbors(adjacent vertices) first, one layer of the graph at a time.
 
@@ -123,3 +123,18 @@ Pseudo code for the BFS algorithm, starting at vertex `v`:
   - Mark `u` as discovered(grey)
   - Enqueue all the unvisited(white) neighbors `w` of `u`
   - Mark `u` as explored(black)
+
+### Depth-First-Search algorithm
+
+The DFS algorithm will start traversing the graph from the first specified vertex, will follow a path until the last vertex of this path is visited, will then backtrack, and will finally follow the next path.
+
+DFS algorithm visits the vertices first deeply and then widely.
+
+![1557136054847](/home/lomolo/.config/Typora/typora-user-images/1557136054847.png)
+
+The DFS algorithm does not need a source vertex. In the DFS algorithm, for each unvisited vertex `v` in Graph `G`, visit the vertex `v`.
+
+To visit vertex `v`, we perform the following steps:
+
+- Mark `v` as discovered(grey)
+- For all unvisited(white) neighbors `w` of `v` , visit the vertex `w` and mark `v` as explored(black)
