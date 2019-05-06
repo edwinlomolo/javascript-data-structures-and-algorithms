@@ -54,6 +54,25 @@ class Graph {
     }
   }
 
+  dfsVisit(u, color, cb) {
+    /* eslint-disable */
+    color[u] = 'grey';
+    /* eslint-enable */
+    if (cb) {
+      cb(u);
+    }
+    const neighbors = this.adjList.get(u);
+    for (let i = 0; i < neighbors.length; i += 1) {
+      const w = neighbors[i];
+      if (color[w] === 'white') {
+        dfsVisit(w, color, cb);
+      }
+    }
+    /* eslint-disable */
+    color[u] = 'black';
+    /* eslint-enable */
+  }
+
   /**
    * DFS algorithm
    */
