@@ -76,7 +76,7 @@ class Graph {
   /**
    * DFS algorithm
    */
-  dfs(v, cb) {
+  dfs(cb) {
     const color = initializeColor(this.vertices);
     for (let i = 0; i < this.vertices.length; i += 1) {
       if (color[this.vertices[i]] === 'white') {
