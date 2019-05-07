@@ -138,3 +138,22 @@ To visit vertex `v`, we perform the following steps:
 
 - Mark `v` as discovered(grey)
 - For all unvisited(white) neighbors `w` of `v` , visit the vertex `w` and mark `v` as explored(black)
+
+## Shortest path algorithms
+
+Given a map of a street, consider you want to get from point **A** to point **B** using the shortest path possible. We can use, as an example for this problem, the way from **Santa Monica Blvd** to **Hollywood Blvd** in Los Angeles.
+
+![1557236809666](/home/lomolo/.config/Typora/typora-user-images/1557236809666.png)
+
+This is a very common problem in our lives, and we will use apps such as *Apple* or *Google Maps* to try to solve it, especially if you live in a big city. We also have other constraints involved, such as time or car traffic, but the original problem remains: how do we get from point **A** to point **B** using the shortest path?
+
+We can use graphs to solve this problem for us.  There are two famous shortest path algorithm, which are **Dijkstra's algorithm** and **Floyd-Warshall algorithm**.
+
+In this section, we covered how to implement a graph data structure, how to traverse a graph(the Breadth-First-Search algorithm and the Depth-First-Search algorithm). 
+
+To get into in-depth details about graphs and various graphs algorithms such as MST(minimum spanning tree), Dijkstra and the Floyd-Warshall shortest path algorithms, Kruskal's algorithm, checkout out the links below:
+
+[Shortest path algorithms]()
+
+[Minimum Spanning Tree(MST)]()
+
