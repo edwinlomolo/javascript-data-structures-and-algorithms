@@ -5,13 +5,23 @@
 const expect = require("expect.js");
 const Graph = require("../../Graphs/graph");
 let graph;
+let visitedVertex;
 
 const vertices = ["A", "B", "C", "D", "E", "F", "G", "H", "I"];
+const dfsVertices = ["A", "B", "E", "I", "F", "C", "D", "G", "H"];
 
 // Hook
 before(() => {
   graph = new Graph();
 });
+
+beforeEach(() => {
+  visitedVertex = [];
+});
+
+const cb = value => {
+  visitedVertex.push(value);
+};
 
 describe("GRAPHS DATA STRUCTURE", () => {
   it("Should be able to initialize a new Graph data structure", () => {
@@ -37,19 +47,15 @@ describe("GRAPHS DATA STRUCTURE", () => {
     graph.addEdge('E', 'I');
   });
   it("Should be able to perform Breadth-First-Search on a Graph", () => {
-    const visitedVertex = [];
-    const getVisitedNodes = value => {
-      visitedVertex.push(value);
-    };
-    graph.bfs(vertices[0], getVisitedNodes);
+    graph.bfs(vertices[0], cb);
     for (let i = 0; i < vertices.length; i += 1) {
       expect(visitedVertex[i]).to.be.equal(vertices[i]);
     }
   });
   it("Should be able to perform Depth-First-Search on a Graph", () => {
-    const printNode = value => {
-      console.log(value);
+    graph.dfs(cb);
+    for (let i = 0; i < visitedVertex.length; i += 1) {
+      expect(dfsVertices[i]).to.be.equal(visitedVertex[i]);
     }
-    graph.dfs(printNode);
   });
 });
