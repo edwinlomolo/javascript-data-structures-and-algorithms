@@ -1,11 +1,11 @@
 {
   "name": "javascript_ds_algorithms",
   "version": "1.0.0",
-  "description": "Learn JavaScript data structures and algorithms for dummies",
+  "description": "Learn JavaScript Data Structures and Algorithms",
   "main": "index.js",
   "scripts": {
     "test": "mocha --recursive test",
-    "lint": "eslint Linked-List Queues Sets Stacks"
+    "lint": "eslint Dictionaries Graphs Hash Linked-List Queues 'Searching algorithms' Sets 'Sorting algorithms' Stacks Trees utils"
   },
   "keywords": [
     "JavaScript",
