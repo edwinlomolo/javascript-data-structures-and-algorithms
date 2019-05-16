@@ -1,4 +1,4 @@
-# Introduction to JavaScript Data Structures and Algorithms for dummies
+# Introduction to JavaScript Data Structures and Algorithms for dummies🚀💥⚡🎉🎊💻🖥
 
 JavaScript is a very powerful language. It is the most popular language in the world and is the most prominent language on the Internet :sunglasses:
 
