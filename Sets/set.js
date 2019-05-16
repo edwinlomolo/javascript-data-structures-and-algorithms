@@ -25,7 +25,7 @@ class Set {
 
   has(value) {
     // This returns true if the value exists in the set or false otherwise
-    return this.items.hasOwnProperty(value);
+    return value in this.items;
   }
 
   clear() {
