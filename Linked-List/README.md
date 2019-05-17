@@ -13,3 +13,20 @@ We have some real-world example of a linked list. The first example is a conga l
 Another example would be a scavenger hunt. You have a clue, and this clue is the pointer to the place where you can find the next clue. With this link, you go to the next place and get another clue that will lead to the next one. The only way to get a clue from the middle of the list is to follow the list from the beginning(from the first clue).
 
 We have another example, which is the most popular one used to exemplify linked list; that of a train. A train consists of a series of vehicles(wagons). Each vehicle(wagon) is linked to each other. You can decouple a wagon, change its place, or add or remove it. Each wagon is an element of the list and the link between the wagons is the pointer.
+
+There are different types of linked lists. In this tutorials, we are going to introduce you to the normal linked lists and all the operations we can carry out in a linked list. Check out the following  links about the Doubly linked list and the Circular linked list and modify the Linked-List class to work as a doubly linked list and circular linked list;
+
+- ### Doubly Linked-List
+
+ ![1558076188512](/home/lomolo/.config/Typora/typora-user-images/1558076188512.png)
+
+In a normal linked list, we make the link from one node to the next node only, while in a doubly linked list, we have a double link: one for the next element and one for the previous element as shown above 👆.
+
+- ### Circular Linked-List
+
+The only difference between the circular linked list and the normal linked list is that the last element's next(`tail.next`) pointer does not make a reference to `null,` but to the first element(`head`).
+
+![1558076649628](/home/lomolo/.config/Typora/typora-user-images/1558076649628.png)
+
+
+
