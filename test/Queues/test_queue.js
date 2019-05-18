@@ -1,6 +1,6 @@
 // Queue data structure class implementation
 
-const Queue = require("../../Queues/queue");
+const Queue = require("../../Queues");
 const expect = require("expect.js");
 
 let queue;

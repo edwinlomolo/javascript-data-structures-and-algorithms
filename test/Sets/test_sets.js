@@ -1,7 +1,7 @@
 // Set data structure implementation
 
 const expect = require("expect.js");
-const Set = require("../../Sets/set");
+const Set = require("../../Sets");
 
 let set;
 

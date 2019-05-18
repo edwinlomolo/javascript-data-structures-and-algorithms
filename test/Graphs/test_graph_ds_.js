@@ -3,7 +3,7 @@
 ////////////////////////////////////////////////////
 
 const expect = require("expect.js");
-const Graph = require("../../Graphs/graph");
+const Graph = require("../../Graphs");
 let graph;
 let visitedVertex;
 

@@ -1,7 +1,7 @@
 // Linked list data structure implementations
 
 const expect = require("expect.js");
-const LinkedList = require("../../Linked-List/linked_list");
+const LinkedList = require("../../Linked-List");
 
 let linkedList;
 

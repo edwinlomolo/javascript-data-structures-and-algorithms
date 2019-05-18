@@ -1,6 +1,6 @@
 // Stack data structure test drive
 
-const Stack = require("../../Stacks/stack");
+const Stack = require("../../Stacks");
 const expect = require("expect.js");
 
 let stack;

@@ -1,6 +1,6 @@
 // HashTable implementation
 
-const Hash = require("../../Hash/hash");
+const Hash = require("../../Hash");
 const expect = require("expect.js");
 
 let table;

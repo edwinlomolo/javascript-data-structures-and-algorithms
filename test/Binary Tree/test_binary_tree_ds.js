@@ -1,7 +1,7 @@
 // Test cases and implementation of binary tree data structure
 
 const expect = require("expect.js");
-const BinaryTree = require("../../Trees/tree");
+const BinaryTree = require("../../Trees");
 let binaryTree;
 
 // Hook

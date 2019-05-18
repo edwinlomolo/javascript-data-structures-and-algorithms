@@ -1,6 +1,6 @@
 // Dictionary class implementation(test-cases)
 
-const Dictionary = require("../../Dictionaries/dictionary");
+const Dictionary = require("../../Dictionaries");
 const expect = require("expect.js");
 
 let dict;
