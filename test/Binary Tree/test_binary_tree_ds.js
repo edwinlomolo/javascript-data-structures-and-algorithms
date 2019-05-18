@@ -17,7 +17,7 @@ describe("BINARY TREE DATA STRUCTURE", () => {
   it("Should be able to add a new element to the binary tree", () => {
     binaryTree.insert(11);
     expect(binaryTree.search(11)).to.be(true);
-    /*binaryTree.insert(7);
+    binaryTree.insert(7);
     expect(binaryTree.search(7)).to.be(true);
     binaryTree.insert(15);
     expect(binaryTree.search(15)).to.be(true);
@@ -42,7 +42,7 @@ describe("BINARY TREE DATA STRUCTURE", () => {
     binaryTree.insert(18);
     expect(binaryTree.search(18)).to.be(true);
     binaryTree.insert(25);
-    expect(binaryTree.search(25)).to.be(true);*/
+    expect(binaryTree.search(25)).to.be(true);
   });
   it("Should be able to search for a value in a binary tree", () => {
     expect(binaryTree.search(20)).to.be(false); // Since 20 is not in the tree
