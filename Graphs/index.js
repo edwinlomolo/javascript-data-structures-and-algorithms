@@ -1,6 +1,6 @@
 // Graph data structure class definition
-const Dictionary = require("../Dictionaries/dictionary");
-const Queue = require("../Queues/queue");
+const Dictionary = require("../Dictionaries");
+const Queue = require("../Queues");
 const { initializeColor } = require("../utils/Graphs");
 
 class Graph {
