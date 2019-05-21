@@ -6,7 +6,7 @@ A **graph** is an abstract model of a network structure. A graph is a set of **n
 
 Any social network, such as Facebook, Twitter, can be represented by a graph.
 
-![1555753102832](/home/lomolo/.config/Typora/typora-user-images/1555753102832.png)
+![Graph](https://res.cloudinary.com/dazskjikr/image/upload/v1558470233/graph.png)
 
 We can also use graphs to represent, roads, flights, and communications.
 
@@ -17,7 +17,7 @@ A graph *G = (V, E)* is composed of:
 
 ## Graph Terminology
 
-![1555753146287](/home/lomolo/.config/Typora/typora-user-images/1555753146287.png)
+![Graph Terminology](https://res.cloudinary.com/dazskjikr/image/upload/v1558470502/graph_terminology.png)
 
 Vertices connected by an edge are called **adjacent vertices**. For example, **A** and **D** are adjacent, **A** and **C** are adjacent, **A** and **B** are adjacent and **A** and **E** are *not* adjacent.
 
@@ -33,13 +33,13 @@ A graph is **acyclic** if it does not have cycles. A graph is connected if there
 
 Graphs can be **undirected**(where edges do not have direction) or **directed**(**digraph**), where edges have direction.
 
-![1555753532675](/home/lomolo/.config/Typora/typora-user-images/1555753532675.png)
+![Directed Undirected Graph](https://res.cloudinary.com/dazskjikr/image/upload/v1558471550/directed_graph_undirected_graph.png)
 
 A graph is **strongly directed** if there is a path in both directions between every pair of vertices. For example, **C** and **D** are strongly connected, while **A** and **B** are not strongly connected.
 
 Graphs can also be **unweighted**(as we have noted so far) or **weighted**(in which the edges have weights,) as shown in the diagram below
 
-![1555756325172](/home/lomolo/.config/Typora/typora-user-images/1555756325172.png)
+![Weighted Unweighted Graph](https://res.cloudinary.com/dazskjikr/image/upload/v1558471618/unweighted_graph.png)
 
 We can solve many problems in the computer science using graphs, such as
 
@@ -57,7 +57,7 @@ There are a few ways in which we can represent graphs when it comes to data stru
 
 This is the most common implementation of graphs using adjacency matrix. Each node is associated with an integer, which is an array index. We will represent the connectivity between vertices using a two-dimensional array, as `array[i][j] === 1` if there is an edge from the node with index *i* to the node with index *j* or as `array[i][j] === 0` otherwise, as demonstrated by the below diagram:
 
-![1555757371997](/home/lomolo/.config/Typora/typora-user-images/1555757371997.png)
+![Adjacency Matrix](https://res.cloudinary.com/dazskjikr/image/upload/v1558471684/adjacency_matrix.png)
 
 Graphs that are not strongly connected(**sparse graphs**) will be represented by a matrix with many entries in the adjacency matrix. This means that we would waste space in the computer memory to represent edges that do not exist; for example, if we need to find the adjacent vertices of a given vertex, we will have to iterate through the whole row even if this vertex has only one adjacent vertex. Another reason this might not be a good representation is that the number of vertices in the graph may change, and a two-dimensional array is not flexible.
 
@@ -65,7 +65,7 @@ Graphs that are not strongly connected(**sparse graphs**) will be represented by
 
 We can use dynamic data structure to represent graphs as well, called an **adjacency list**. This consists of a list of adjacent vertices for every vertex of the graph. There are a few different ways we can represent this data structure. To represent the list of adjacent vertices, we can use a list(array), a linked list, or even a hash map or dictionary.
 
-![1555844168945](/home/lomolo/.config/Typora/typora-user-images/1555844168945.png)
+![Real Adjacency Matrix](https://res.cloudinary.com/dazskjikr/image/upload/v1558471745/real_adjacency_matrix.png)
 
 Both representations are very useful and have different properties(for example, finding out whether the vertices `v` and `w` are adjacent is faster using adjacency matrix), although adjacency lists are probably better for most problems. We are going to use adjacency list representation for the examples in this tutorial.
 
@@ -73,7 +73,7 @@ Both representations are very useful and have different properties(for example, 
 
 We can also represent a graph using the **incidence matrix**. In an incidence matrix, each row of the matrix represents a vertex, and each column represents an edge. We represent the connectivity between two objects using a two-dimensional array, as `array[v][e] === 1` if the vertex `v` is incident upon edge `e` or as `array[v][e] === 0` otherwise, as shown below:
 
-![1555845884714](/home/lomolo/.config/Typora/typora-user-images/1555845884714.png)
+![Incidence Matrix](https://res.cloudinary.com/dazskjikr/image/upload/v1558471803/incidence_matrix.png)
 
 An incidence matrix is usually used to save space and memory when we have more edges than vertices.
 
@@ -112,7 +112,7 @@ BFS algorithm starts traversing the graph from the first specified vertex and vi
 
 It visits the vertices first widely and then deeply.
 
-![1556449141086](/home/lomolo/.config/Typora/typora-user-images/1556449141086.png)
+![BFS](https://res.cloudinary.com/dazskjikr/image/upload/v1558471872/bfs.png)
 
 Pseudo code for the BFS algorithm, starting at vertex `v`:
 
@@ -130,7 +130,7 @@ The DFS algorithm will start traversing the graph from the first specified verte
 
 DFS algorithm visits the vertices first deeply and then widely.
 
-![1557136054847](/home/lomolo/.config/Typora/typora-user-images/1557136054847.png)
+![DFS](https://res.cloudinary.com/dazskjikr/image/upload/v1558471934/depth_first_search.png)
 
 The DFS algorithm does not need a source vertex. In the DFS algorithm, for each unvisited vertex `v` in Graph `G`, visit the vertex `v`.
 
@@ -143,7 +143,7 @@ To visit vertex `v`, we perform the following steps:
 
 Given a map of a street, consider you want to get from point **A** to point **B** using the shortest path possible. We can use, as an example for this problem, the way from **Santa Monica Blvd** to **Hollywood Blvd** in Los Angeles.
 
-![1557236809666](/home/lomolo/.config/Typora/typora-user-images/1557236809666.png)
+![Shortest Path](https://res.cloudinary.com/dazskjikr/image/upload/v1558472022/shortest_path_graph.png)
 
 This is a very common problem in our lives, and we will use apps such as *Apple* or *Google Maps* to try to solve it, especially if you live in a big city. We also have other constraints involved, such as time or car traffic, but the original problem remains: how do we get from point **A** to point **B** using the shortest path?
 

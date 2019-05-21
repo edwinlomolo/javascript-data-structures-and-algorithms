@@ -13,6 +13,8 @@ We will cover the following:
 
 A tree is an abstract model of a hierarchical structure. The most common example of a tree in real life would be a family tree or a company organisational chart.
 
+![Tree](https://res.cloudinary.com/dazskjikr/image/upload/v1558469058/tree_ds.png)
+
 ## Tree terminology
 
 ![Image of a tree data structure](https://res.cloudinary.com/dazskjikr/image/upload/v1548754268/binary-tree-to-DLL.png)

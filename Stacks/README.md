@@ -6,6 +6,8 @@ A stack is an ordered collections of items that follow the **LIFO(Last In First 
 
 Some of the real life examples of stacks include a pile of books, or a stack of trays in a cafeteria or food court.
 
+![Stack](https://res.cloudinary.com/dazskjikr/image/upload/v1558467704/stack_of_books.png)
+
 A stack is also used by compilers in programming language and by computer memory to store variables and method calls.
 
 We are going to create a basic class of our stack and rise the bar as we go along  with this tutorial.
