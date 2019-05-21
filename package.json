@@ -4,7 +4,8 @@
   "description": "Learn JavaScript Data Structures and Algorithms",
   "main": "index.js",
   "scripts": {
-    "test": "nyc --reporter=lcov mocha --recursive test",
+    "test": "nyc mocha --recursive test",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
     "lint": "eslint Dictionaries Graphs Hash Linked-List Queues 'Searching algorithms' Sets 'Sorting algorithms' Stacks Trees utils"
   },
   "keywords": [
