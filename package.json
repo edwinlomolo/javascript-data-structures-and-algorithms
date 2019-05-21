@@ -4,7 +4,7 @@
   "description": "Learn JavaScript Data Structures and Algorithms",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --recursive test",
+    "test": "istanbul cover mocha --recursive test",
     "lint": "eslint Dictionaries Graphs Hash Linked-List Queues 'Searching algorithms' Sets 'Sorting algorithms' Stacks Trees utils"
   },
   "keywords": [
@@ -28,6 +28,7 @@
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-react": "^7.11.1",
+    "nyc": "^14.1.1",
     "prettier": "^1.15.3"
   }
 }
