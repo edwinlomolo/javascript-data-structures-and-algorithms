@@ -1,5 +1,7 @@
 # Introduction to JavaScript Data Structures and Algorithms for dummies🚀💥⚡🎉🎊💻🖥
 
+[![Build Status](https://travis-ci.org/3dw1nM0535/javascript-data-structures-and-algorithms.svg?branch=develop)](https://travis-ci.org/3dw1nM0535/javascript-data-structures-and-algorithms) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
 JavaScript is a very powerful language. It is the most popular language in the world and is the most prominent language on the Internet :sunglasses:
 
 [GitHub](https://github.com)(the world's largest code host), hosts over a million JavaScript repositories(the largest number of projects is in JavaScript; refer [here](https://octoverse.github.com/projects)). The number of projects in JavaScript in GitHub grows every year.
