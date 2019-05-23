@@ -1,6 +1,6 @@
 # Introduction to JavaScript Data Structures and Algorithms for dummies🚀💥⚡🎉🎊💻🖥
 
-[![Build Status](https://travis-ci.org/3dw1nM0535/javascript-data-structures-and-algorithms.svg?branch=develop)](https://travis-ci.org/3dw1nM0535/javascript-data-structures-and-algorithms) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![Coverage Status](https://coveralls.io/repos/github/3dw1nM0535/javascript-data-structures-and-algorithms/badge.svg?branch=develop)](https://coveralls.io/github/3dw1nM0535/javascript-data-structures-and-algorithms?branch=develop)   
+[![Build Status](https://travis-ci.org/3dw1nM0535/javascript-data-structures-and-algorithms.svg?branch=develop)](https://travis-ci.org/3dw1nM0535/javascript-data-structures-and-algorithms) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![Coverage Status](https://coveralls.io/repos/github/3dw1nM0535/javascript-data-structures-and-algorithms/badge.svg?branch=develop)](https://coveralls.io/github/3dw1nM0535/javascript-data-structures-and-algorithms?branch=develop) [![Greenkeeper badge](https://badges.greenkeeper.io/3dw1nM0535/javascript-data-structures-and-algorithms.svg)](https://greenkeeper.io/)   
 
 JavaScript is a very powerful language. It is the most popular language in the world and is the most prominent language on the Internet :sunglasses:
 
