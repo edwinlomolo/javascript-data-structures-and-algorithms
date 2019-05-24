@@ -20,13 +20,13 @@ We have another example, which is the most popular one used to exemplify linked 
 
 There are different types of linked lists. In this tutorials, we are going to introduce you to the normal linked lists and all the operations we can carry out in a linked list. Check out the following  links about the Doubly linked list and the Circular linked list and modify the Linked-List class to work as a doubly linked list and circular linked list;
 
-- ### Doubly Linked-List
+- ### [Doubly Linked-List](https://en.wikipedia.org/wiki/Doubly_linked_list)
 
  ![Doubly](https://res.cloudinary.com/dazskjikr/image/upload/v1558467818/doubly_linked_list.png)
 
 In a normal linked list, we make the link from one node to the next node only, while in a doubly linked list, we have a double link: one for the next element and one for the previous element as shown above 👆.
 
-- ### Circular Linked-List
+- ### [Circular Linked-List](https://en.wikipedia.org/wiki/Linked_list#Circular_linked_list)
 
 The only difference between the circular linked list and the normal linked list is that the last element's next(`tail.next`) pointer does not make a reference to `null,` but to the first element(`head`).
 

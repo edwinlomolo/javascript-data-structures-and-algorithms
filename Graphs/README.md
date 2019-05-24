@@ -153,7 +153,7 @@ In this section, we covered how to implement a graph data structure, how to trav
 
 To get into in-depth details about graphs and various graphs algorithms such as MST(minimum spanning tree), Dijkstra and the Floyd-Warshall shortest path algorithms, Kruskal's algorithm, checkout out the links below:
 
-[Shortest path algorithms]()
+[Shortest path algorithms](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
 
-[Minimum Spanning Tree(MST)]()
+[Minimum Spanning Tree(MST)](https://en.wikipedia.org/wiki/Minimum_spanning_tree)
 

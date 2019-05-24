@@ -119,7 +119,7 @@ function bubbleSort(array){
 
 If we execute `bubbeSort` for an array of size 10, the cost will be 100(10<sup>2</sup>).  If we execute `bubbleSort` for an array with size 100, the cost will be 10,000(100<sup>2</sup>). Note that the execution will take  even  longer every time we increase the input size.
 
-![1557992623593](/home/lomolo/.config/Typora/typora-user-images/1557992623593.png)
+![](https://res.cloudinary.com/dazskjikr/image/upload/v1558687688/big_O_graph.png)
 
 ## Big-O cheat sheet
 
