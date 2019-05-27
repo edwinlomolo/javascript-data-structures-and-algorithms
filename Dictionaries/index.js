@@ -47,7 +47,8 @@ class Dictionary {
   values() {
     // This returns all the values the dictionary contains as an array
     const values = [];
-    for (let i = 0, keys = Object.keys(this.items); i < keys.length; i += 1) {
+    const keys = Object.keys(this.items);
+    for (let i = 0; i < keys.length; i += 1) {
       if (this.has(keys[i])) {
         values.push(this.items[keys[i]]);
       }
