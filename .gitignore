@@ -1,6 +1,8 @@
 node_modules/
-dist/
+.nyc*
+build/
 coverage/
-DS_Store*
-yarn-debug*.log
+dist/
+yarn-error*.log
+yarn.lock*
 npm-debug*.log
