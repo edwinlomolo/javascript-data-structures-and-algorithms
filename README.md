@@ -1,12 +1,13 @@
 # Introduction to JavaScript Data Structures and Algorithms for dummies🚀💥⚡🎉🎊💻🖥
 
-[![Build Status](https://travis-ci.org/3dw1nM0535/javascript-data-structures-and-algorithms.svg?branch=develop)](https://travis-ci.org/3dw1nM0535/javascript-data-structures-and-algorithms) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![Coverage Status](https://coveralls.io/repos/github/3dw1nM0535/javascript-data-structures-and-algorithms/badge.svg?branch=develop)](https://coveralls.io/github/3dw1nM0535/javascript-data-structures-and-algorithms?branch=develop)   
+[![Build Status](https://travis-ci.org/3dw1nM0535/javascript-data-structures-and-algorithms.svg?branch=develop)](https://travis-ci.org/3dw1nM0535/javascript-data-structures-and-algorithms) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![Coverage Status](https://coveralls.io/repos/github/3dw1nM0535/javascript-data-structures-and-algorithms/badge.svg?branch=develop)](https://coveralls.io/github/3dw1nM0535/javascript-data-structures-and-algorithms?branch=develop)
 
-JavaScript is a very powerful language. It is the most popular language in the world and is the most prominent language on the Internet :sunglasses:
+JavaScript is becoming a very powerful and formidable language. It is the most popular language in the world and is the most prominent language on the Internet :sunglasses:
 
 [GitHub](https://github.com)(the world's largest code host), hosts over a million JavaScript repositories(the largest number of projects is in JavaScript; refer [here](https://octoverse.github.com/projects)). The number of projects in JavaScript in GitHub grows every year.
 
 JavaScript is not a language that can be used on the front-end only. It can also be used in the back-end, and Node.js is the technology responsible for this. The number of [**Node Package Module(NPM)**](https://www.npmjs.com) also grows exponentially.
+
 JavaScript is a must-have on your resume if you are or will become a web developer.
 
 We will learn about the most used data structures and algorithms using JavaScript. JavaScript is very popular and is appropriate to learn about data structures because it is a functional language. Also, there is no other fun way of learning something new as it is very different and easier than learning about data structures with a standard language such as **C** or **Java**.
@@ -42,3 +43,6 @@ We are going to cover the following:
   - *Sequential search*
   - *Binary search*
 
+## Contributing
+
+[Please follow these contribution guidelines](<https://github.com/3dw1nM0535/javascript-data-structures-and-algorithms/blob/develop/CONTRIBUTING.md>)
