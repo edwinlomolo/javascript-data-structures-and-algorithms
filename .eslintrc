@@ -1,0 +1,52 @@
+{
+  "extends": ["prettier", "airbnb", "prettier/react"],
+  "plugins": ["prettier"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "impliedStrict": true,
+      "jsx": true
+    }
+  },
+  "rules": {
+    "no-dupe-args": 1,
+    "spaced-comment": "off",
+    "arrow-body-style": "off",
+    "arrow-parens": ["error", "as-needed"],
+    "semi": ["error", "always"],
+    "no-dupe-keys": "error",
+    "eqeqeq": ["error", "always"],
+    "no-else-return": 1,
+    "no-empty-function": 1,
+    "no-empty": "error",
+    "no-undef": "error",
+    "no-unused-vars": "error",
+    "no-use-before-define": "error",
+    "camelcase": "error",
+    "indent": ["error", 2],
+    "curly": "error",
+    "default-case": "error",
+    "vars-on-top": "error",
+    "key-spacing": ["error", {
+      "beforeColon": false
+    }],
+    "no-plusplus": "error",
+    "no-new-object": "error",
+    "quotes": [0, "double"],
+    "global-require": "off",
+    "import/no-dynamic-require": "off",
+    "no-underscore-dangle": "error",
+    "react/jsx-filename-extension": [1, {
+      "extensions": [".js", ".jsx"]
+    }],
+    "jsx-a11y/anchor-is-valid": "off",
+    "jsx-a11y/label-has-for": "off"
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  }
+}

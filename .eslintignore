@@ -1,0 +1,8 @@
+# Avoid linting on these files
+
+**/node_modules/**
+**/dist/**
+**/build/**
+**/test/**
+**/coverage/**
+**/webpack.config.dev*.js
